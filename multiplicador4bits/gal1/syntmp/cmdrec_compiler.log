@@ -1,0 +1,8 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\aluci\documents\isplever\gal1\synwork\multiplicador_comp.srs  -top  multiplicador  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  C:\users\aluci\documents\isplever\gal1\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\aluci\documents\isplever\gal1\sumador.vhd -lib work C:\users\aluci\documents\isplever\gal1\multiplicador.vhd -loga  C:\users\aluci\documents\isplever\gal1\multiplicador.srr 
+rc:0 success:1
+C:\users\aluci\documents\isplever\gal1\synwork\multiplicador_comp.srs|o|1492618018|2539
+C:\users\aluci\documents\isplever\gal1\sumador.vhd|i|1492604437|397
+C:\users\aluci\documents\isplever\gal1\multiplicador.vhd|i|1492617994|1332
+C:\users\aluci\documents\isplever\gal1\multiplicador.srr|o|1492618018|1666
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401252698|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401252904|5533184

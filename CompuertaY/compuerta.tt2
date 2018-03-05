@@ -1,0 +1,14 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Apr 05 18:02:45 2017
+#$ MODULE enty
+#$ PINS 3 A B Y
+.type fr
+.i 2
+.o 1
+.ilb A B
+.ob Y
+.p 3
+11 1
+0- 0
+-0 0
+.end

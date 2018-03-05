@@ -1,0 +1,5 @@
+@E: CD169 :"C:\users\aluci\documents\isplever\luces\multiplicador.vhd":7:2:7:2|Illegal declaration
+@E: CD213 :"C:\users\aluci\documents\isplever\luces\multiplicador.vhd":34:2:34:2|Undefined identifier
+@E: CD255 :"C:\users\aluci\documents\isplever\luces\multiplicador.vhd":36:11:36:11|No identifier "a" in scope
+@E|Parse errors encountered - exiting
+

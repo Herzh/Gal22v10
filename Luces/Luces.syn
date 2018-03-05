@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Luces
+DESIGN luces Normal
+DEVKIT GAL22V10D-10LP
+ENTRY Pure VHDL
+MODULE luces.vhd
+MODSTYLE luces Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE luces

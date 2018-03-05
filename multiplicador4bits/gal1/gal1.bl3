@@ -1,0 +1,70 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Apr 19 11:07:04 2017
+#$ MODULE multiplicador
+#$ PINS 12 A_3_ B_1_ R_1_ S_3_ A_2_ A_1_ A_0_ B_0_ R_0_ S_2_ S_1_ S_0_
+
+.model multiplicador
+.inputs A_3_.BLIF B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF
+.outputs R_1_ S_3_ R_0_ S_2_ S_1_ S_0_
+.names B_1_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF R_1_
+101- 1
+1-10 1
+-101 1
+01-1 1
+1111 0
+-00- 0
+00-- 0
+--00 0
+0--0 0
+.names A_3_.BLIF B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF S_3_
+11-111 1
+111--1 1
+--0-0- 0
+--00-- 0
+-0---- 0
+0----- 0
+-----0 0
+.names A_0_.BLIF B_0_.BLIF R_0_
+11 1
+0- 0
+-0 0
+.names A_3_.BLIF B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF S_2_
+0111-1 1
+110-0- 1
+1100-- 1
+11---0 1
+--0111 0
+0--0-- 0
+1-1--1 0
+0-0--- 0
+-0---- 0
+0----0 0
+.names A_3_.BLIF B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF S_1_
+1-0-01 1
+1-11-1 1
+010111 1
+0110-- 1
+-11--0 1
+1-00-1 1
+10---1 1
+0-0-0- 0
+11011- 0
+1110-1 0
+0-11-1 0
+0-00-- 0
+-0---0 0
+00---- 0
+--0--0 0
+.names B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF S_0_
+-1-11 1
+1010- 1
+1-1-0 1
+-10-1 1
+01--1 1
+11101 0
+-0-11 0
+-00-- 0
+00--- 0
+--0-0 0
+0---0 0
+.end

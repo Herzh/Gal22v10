@@ -1,0 +1,105 @@
+#$ DATE Wed Apr 19 11:07:04 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE multiplicador
+#$ PINS 12 A_3_ B_1_ R_1_ S_3_ A_2_ A_1_ A_0_ B_0_ R_0_ S_2_ S_1_ S_0_
+#$ NODES 34 r_1_0__n r_1_1__n s_1_0__n s_1_1__n s_1_2__n s_1_3__n acarreo_0__n c_3__n c_2__n acarreo_1__n \
+#  c_5__n c_4__n c_0__n c_1__n acarreo_2__n c_6__n u2_cout_n u2_un2_cout_n u1_cout_n a_c_0__n \
+#  a_c_1__n a_c_2__n a_c_3__n b_c_0__n b_c_1__n u1_cout_i_n acarreo_i_0__n acarreo_0_1__n acarreo_0_2__n u2_un2_cout_i_n \
+#  u2_cout_i_n s_1_i_3__n s_1_1_1__n s_1_1_0__n 
+.model multiplicador
+.inputs A_3_.BLIF B_1_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_0_.BLIF r_1_0__n.BLIF r_1_1__n.BLIF s_1_0__n.BLIF \
+  s_1_1__n.BLIF s_1_2__n.BLIF s_1_3__n.BLIF acarreo_0__n.BLIF c_3__n.BLIF c_2__n.BLIF acarreo_1__n.BLIF c_5__n.BLIF c_4__n.BLIF \
+  c_0__n.BLIF c_1__n.BLIF acarreo_2__n.BLIF c_6__n.BLIF u2_cout_n.BLIF u2_un2_cout_n.BLIF u1_cout_n.BLIF a_c_0__n.BLIF a_c_1__n.BLIF \
+  a_c_2__n.BLIF a_c_3__n.BLIF b_c_0__n.BLIF b_c_1__n.BLIF u1_cout_i_n.BLIF acarreo_i_0__n.BLIF acarreo_0_1__n.BLIF acarreo_0_2__n.BLIF u2_un2_cout_i_n.BLIF \
+  u2_cout_i_n.BLIF s_1_i_3__n.BLIF s_1_1_1__n.BLIF s_1_1_0__n.BLIF  
+.outputs R_1_ S_3_ R_0_ S_2_ S_1_ S_0_ r_1_0__n r_1_1__n s_1_0__n s_1_1__n s_1_2__n \
+  s_1_3__n acarreo_0__n c_3__n c_2__n acarreo_1__n c_5__n c_4__n c_0__n c_1__n acarreo_2__n c_6__n \
+  u2_cout_n u2_un2_cout_n u1_cout_n a_c_0__n a_c_1__n a_c_2__n a_c_3__n b_c_0__n b_c_1__n u1_cout_i_n acarreo_i_0__n \
+  acarreo_0_1__n acarreo_0_2__n u2_un2_cout_i_n u2_cout_i_n s_1_i_3__n s_1_1_1__n s_1_1_0__n
+.names  A_0_.BLIF a_c_0__n
+1 1
+.names  A_1_.BLIF a_c_1__n
+1 1
+.names  A_2_.BLIF a_c_2__n
+1 1
+.names  A_3_.BLIF a_c_3__n
+1 1
+.names  B_0_.BLIF b_c_0__n
+1 1
+.names  B_1_.BLIF b_c_1__n
+1 1
+.names  r_1_0__n.BLIF R_0_
+1 1
+.names  r_1_1__n.BLIF R_1_
+1 1
+.names  s_1_0__n.BLIF S_0_
+1 1
+.names  s_1_1__n.BLIF S_1_
+1 1
+.names  s_1_2__n.BLIF S_2_
+1 1
+.names  s_1_3__n.BLIF S_3_
+1 1
+.names  acarreo_0__n.BLIF acarreo_i_0__n
+0 1
+.names  acarreo_0_1__n.BLIF acarreo_1__n
+0 1
+.names  acarreo_0_2__n.BLIF acarreo_2__n
+0 1
+.names  u2_un2_cout_n.BLIF u2_un2_cout_i_n
+0 1
+.names  u2_cout_n.BLIF u2_cout_i_n
+0 1
+.names  s_1_i_3__n.BLIF s_1_3__n
+0 1
+.names  c_5__n.BLIF acarreo_1__n.BLIF s_1_1_1__n
+01 1
+10 1
+.names  s_1_1_1__n.BLIF c_4__n.BLIF s_1_1__n
+01 1
+10 1
+.names  c_3__n.BLIF acarreo_0__n.BLIF s_1_1_0__n
+01 1
+10 1
+.names  s_1_1_0__n.BLIF c_2__n.BLIF s_1_0__n
+01 1
+10 1
+.names  c_2__n.BLIF c_3__n.BLIF u1_cout_n
+11 1
+.names  acarreo_i_0__n.BLIF u1_cout_i_n.BLIF acarreo_0_1__n
+11 1
+.names  u1_cout_n.BLIF u1_cout_i_n
+0 1
+.names  c_0__n.BLIF c_1__n.BLIF r_1_1__n
+01 1
+10 1
+.names  c_0__n.BLIF c_1__n.BLIF acarreo_0__n
+11 1
+.names  acarreo_2__n.BLIF c_6__n.BLIF s_1_2__n
+01 1
+10 1
+.names  a_c_0__n.BLIF b_c_0__n.BLIF r_1_0__n
+11 1
+.names  a_c_1__n.BLIF b_c_0__n.BLIF c_0__n
+11 1
+.names  a_c_0__n.BLIF b_c_1__n.BLIF c_1__n
+11 1
+.names  a_c_2__n.BLIF b_c_0__n.BLIF c_2__n
+11 1
+.names  a_c_1__n.BLIF b_c_1__n.BLIF c_3__n
+11 1
+.names  a_c_3__n.BLIF b_c_0__n.BLIF c_4__n
+11 1
+.names  a_c_2__n.BLIF b_c_1__n.BLIF c_5__n
+11 1
+.names  a_c_3__n.BLIF b_c_1__n.BLIF c_6__n
+11 1
+.names  c_4__n.BLIF c_5__n.BLIF u2_cout_n
+11 1
+.names  a_c_3__n.BLIF acarreo_1__n.BLIF u2_un2_cout_n
+11 1
+.names  u2_cout_i_n.BLIF u2_un2_cout_i_n.BLIF s_1_i_3__n
+11 1
+.names  s_1_i_3__n.BLIF u1_cout_i_n.BLIF acarreo_0_2__n
+11 1
+.end

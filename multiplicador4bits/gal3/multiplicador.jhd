@@ -1,0 +1,9 @@
+
+
+MODULE multiplicador
+
+	SUBMODULE sumador
+		INSTANCE U8
+		INSTANCE U9
+		INSTANCE U10
+		INSTANCE U11

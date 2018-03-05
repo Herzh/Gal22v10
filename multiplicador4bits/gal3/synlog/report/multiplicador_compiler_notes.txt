@@ -1,0 +1,6 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\aluci\documents\isplever\gal3\multiplicador.vhd":6:7:6:19|Top entity is set to multiplicador.
+@N: CD630 :"C:\users\aluci\documents\isplever\gal3\multiplicador.vhd":6:7:6:19|Synthesizing work.multiplicador.logica 
+@N: CD630 :"C:\users\aluci\documents\isplever\gal3\sumador.vhd":6:7:6:13|Synthesizing work.sumador.suma 
+

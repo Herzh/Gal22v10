@@ -1,0 +1,13 @@
+JDF B
+// Created by Version 2.0 
+PROJECT gal3
+DESIGN gal3 Normal
+DEVKIT GAL22V10D-10LP
+ENTRY Pure VHDL
+MODULE multiplicador.vhd
+MODSTYLE multiplicador Normal
+MODULE sumador.vhd
+MODSTYLE sumador Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE multiplicador

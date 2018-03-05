@@ -1,0 +1,8 @@
+[NameRules]
+InstanceSeparator=^
+
+[Waves]
+Count=3
+Net0=Y
+Net1=B
+Net2=A

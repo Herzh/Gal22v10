@@ -1,0 +1,3 @@
+@W: CL240 :"C:\users\aluci\documents\isplever\gal1\multiplicador.vhd":12:2:12:5|Cout is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL159 :"C:\users\aluci\documents\isplever\gal1\multiplicador.vhd":11:2:11:4|Input Cin is unused
+

@@ -1,0 +1,25 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: DESKTOP-I2MRN0G
+
+#Implementation: luces
+
+$ Start of Compile
+#Wed Apr 05 19:00:52 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\aluci\documents\isplever\luces\luces.vhd":6:7:6:11|Top entity is set to luces.
+File C:\users\aluci\documents\isplever\luces\luces.vhd changed - recompiling
+@E: CD214 :"C:\users\aluci\documents\isplever\luces\luces.vhd":22:1:22:8|Not a concurrent statement
+1 error parsing file C:\users\aluci\documents\isplever\luces\luces.vhd
+@END
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Apr 05 19:00:52 2017
+
+###########################################################]

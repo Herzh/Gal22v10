@@ -1,0 +1,149 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      A(3:0)                        A                  3          4            -1
+      Port          2      E(3:0)                        E                  3          4            -1
+      Port          3      S(3:0)                        S                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      A_3_                        A[3]                       1            0            
+        Port      A_2_                        A[2]                       1            1            
+        Port      A_1_                        A[1]                       1            2            
+        Port      A_0_                        A[0]                       1            3            
+        Port      E_3_                        E[3]                       2            0            
+        Port      E_2_                        E[2]                       2            1            
+        Port      E_1_                        E[1]                       2            2            
+        Port      E_0_                        E[0]                       2            3            
+        Port      S_3_                        S[3]                       3            0            
+        Port      S_2_                        S[2]                       3            1            
+        Port      S_1_                        S[1]                       3            2            
+        Port      S_0_                        S[0]                       3            3            
+End
+Section Cross Reference File
+Design 'multiplicador' created Wed Apr 19 11:02:52 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   A_0_                                      A[0]
+   Inst                   A_1_                                      A[1]
+   Inst                   A_2_                                      A[2]
+   Inst                   A_3_                                      A[3]
+   Inst                   E_0_                                      E[0]
+   Inst                   E_1_                                      E[1]
+   Inst                   E_2_                                      E[2]
+   Inst                   E_3_                                      E[3]
+   Inst                   S_0_                                      S[0]
+   Inst                   S_1_                                      S[1]
+   Inst                   S_2_                                      S[2]
+   Inst                   S_3_                                      S[3]
+   Inst              U5_Cout_1                                 U5.Cout_1
+   Inst                U5_Cout                                   U5.Cout
+   Inst                 U7_S_1                                    U7.S_1
+   Inst                   U7_S                                      U7.S
+   Inst                 U6_S_1                                    U6.S_1
+   Inst                   U6_S                                      U6.S
+   Inst                 U5_S_1                                    U5.S_1
+   Inst                   U5_S                                      U5.S
+   Inst              U5_Cout_i                                 U5.Cout_i
+   Inst          U5_un2_cout_i                             U5.un2_cout_i
+   Inst              U5_cout_i                                 U5.cout_i
+   Inst          U6_un4_cout_i                             U6.un4_cout_i
+   Inst              U6_Cout_i                                 U6.Cout_i
+   Inst          U6_un2_cout_i                             U6.un2_cout_i
+   Inst              U6_cout_i                                 U6.cout_i
+   Inst          U7_un4_cout_i                             U7.un4_cout_i
+   Inst              U7_Cout_i                                 U7.Cout_i
+   Inst          U7_un2_cout_i                             U7.un2_cout_i
+   Inst              U7_cout_i                                 U7.cout_i
+   Inst              U7_Cout_1                                 U7.Cout_1
+   Inst                U7_Cout                                   U7.Cout
+   Inst              U6_Cout_1                                 U6.Cout_1
+   Inst                U6_Cout                                   U6.Cout
+   Inst          U5_un4_cout_i                             U5.un4_cout_i
+   Inst                   U4_S                                      U4.S
+   Inst                U4_cout                                   U4.cout
+   Inst                U4_C_3_                                   U4.C[3]
+   Inst                U4_C_2_                                   U4.C[2]
+   Inst                U4_C_1_                                   U4.C[1]
+   Inst                U4_C_0_                                   U4.C[0]
+   Inst                U7_cout                                   U7.cout
+   Inst            U7_un2_cout                               U7.un2_cout
+   Inst            U7_un4_cout                               U7.un4_cout
+   Inst                U6_cout                                   U6.cout
+   Inst            U6_un2_cout                               U6.un2_cout
+   Inst            U6_un4_cout                               U6.un4_cout
+   Inst                U5_cout                                   U5.cout
+   Inst            U5_un2_cout                               U5.un2_cout
+   Inst            U5_un4_cout                               U5.un4_cout
+   Net                s_1_0__n                                    S_1[0]
+   Net                s_1_1__n                                    S_1[1]
+   Net                s_1_2__n                                    S_1[2]
+   Net                s_1_3__n                                    S_1[3]
+   Net            acarreo_0__n                                Acarreo[0]
+   Net                  c_1__n                                      C[1]
+   Net            acarreo_1__n                                Acarreo[1]
+   Net                  c_2__n                                      C[2]
+   Net            acarreo_2__n                                Acarreo[2]
+   Net                  c_3__n                                      C[3]
+   Net                  c_0__n                                      C[0]
+   Net               u7_cout_n                                   U7.cout
+   Net           u7_un2_cout_n                               U7.un2_cout
+   Net           u7_un4_cout_n                               U7.un4_cout
+   Net               u6_cout_n                                   U6.cout
+   Net           u6_un2_cout_n                               U6.un2_cout
+   Net           u6_un4_cout_n                               U6.un4_cout
+   Net               u5_cout_n                                   U5.cout
+   Net           u5_un2_cout_n                               U5.un2_cout
+   Net           u5_un4_cout_n                               U5.un4_cout
+   Net                a_c_0__n                                    A_c[0]
+   Net                  a_0__n                                      A[0]
+   Net                a_c_1__n                                    A_c[1]
+   Net                  a_1__n                                      A[1]
+   Net                a_c_2__n                                    A_c[2]
+   Net                  a_2__n                                      A[2]
+   Net                a_c_3__n                                    A_c[3]
+   Net                e_c_0__n                                    E_c[0]
+   Net                  e_0__n                                      E[0]
+   Net                e_c_1__n                                    E_c[1]
+   Net                  e_1__n                                      E[1]
+   Net                e_c_2__n                                    E_c[2]
+   Net                  e_2__n                                      E[2]
+   Net                e_c_3__n                                    E_c[3]
+   Net                  s_0__n                                      S[0]
+   Net                  s_1__n                                      S[1]
+   Net                  s_2__n                                      S[2]
+   Net         u5_un4_cout_i_n                             U5.un4_cout_i
+   Net          acarreo_0_1__n                              Acarreo_0[1]
+   Net         u5_un2_cout_i_n                             U5.un2_cout_i
+   Net             u5_cout_i_n                                 U5.cout_i
+   Net         u6_un4_cout_i_n                             U6.un4_cout_i
+   Net          acarreo_0_2__n                              Acarreo_0[2]
+   Net         u6_un2_cout_i_n                             U6.un2_cout_i
+   Net             u6_cout_i_n                                 U6.cout_i
+   Net         u7_un4_cout_i_n                             U7.un4_cout_i
+   Net              s_1_0_3__n                                  S_1_0[3]
+   Net         u7_un2_cout_i_n                             U7.un2_cout_i
+   Net             u7_cout_i_n                                 U7.cout_i
+   Net            s_1_0_1_3__n                                S_1_0_1[3]
+   Net        acarreo_0_1_2__n                            Acarreo_0_1[2]
+   Net        acarreo_0_1_1__n                            Acarreo_0_1[1]
+   Net              s_1_1_2__n                                  S_1_1[2]
+   Net              s_1_1_1__n                                  S_1_1[1]
+   Net              s_1_1_0__n                                  S_1_1[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A_3_
+        Input     E_3_
+        Input     B
+        Input     A_2_
+        Input     A_1_
+        Input     A_0_
+        Input     E_2_
+        Input     E_1_
+        Input     E_0_
+        Output     S_3_
+        Output     R
+        Output     S_2_
+        Output     S_1_
+        Output     S_0_
+End

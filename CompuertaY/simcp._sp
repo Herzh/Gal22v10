@@ -1,0 +1,2 @@
+simcp.pre1 -ini simcpls.ini -unit simcp.pre1
+-cfg oaig_pvhd.fdk "simy.ltv" -map "entY.lsi"

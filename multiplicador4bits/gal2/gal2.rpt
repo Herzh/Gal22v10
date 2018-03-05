@@ -1,0 +1,200 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'multiplicador'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : gal2.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : gal2.rpt
+    Programmer load file : gal2.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+S_3_     = (  A_3_ & E_3_ & B 
+            #   A_3_ & acarreo_2__n 
+            #   E_3_ & acarreo_2__n );
+
+R     = (  !B & E_0_ 
+         #   !A_0_ & E_0_ 
+         #   B & A_0_ & !E_0_ );
+
+S_2_     = (  !A_3_ & !E_3_ & acarreo_2__n 
+            #   A_3_ & E_3_ & B & acarreo_2__n 
+            #   !E_3_ & !B & acarreo_2__n 
+            #   !A_3_ & E_3_ & !acarreo_2__n 
+            #   A_3_ & !E_3_ & B & !acarreo_2__n 
+            #   E_3_ & !B & !acarreo_2__n );
+
+S_1_     = (  !B & E_2_ & acarreo_0_1__n 
+            #   !A_2_ & E_2_ & acarreo_0_1__n 
+            #   B & A_2_ & !E_2_ & acarreo_0_1__n 
+            #   B & A_2_ & E_2_ & !acarreo_0_1__n 
+            #   !B & !E_2_ & !acarreo_0_1__n 
+            #   !A_2_ & !E_2_ & !acarreo_0_1__n );
+
+S_0_     = (  !B & E_1_ 
+            #   !A_1_ & !A_0_ & E_1_ 
+            #   B & A_1_ & !A_0_ & !E_1_ 
+            #   A_1_ & A_0_ & E_1_ & E_0_ 
+            #   B & !A_1_ & A_0_ & !E_1_ & E_0_ 
+            #   !A_1_ & E_1_ & !E_0_ 
+            #   B & A_1_ & !E_1_ & !E_0_ );
+
+acarreo_2__n     = (  B & A_2_ & E_2_ 
+                    #   A_2_ & !acarreo_0_1__n 
+                    #   E_2_ & !acarreo_0_1__n );
+
+acarreo_0_1__n     = !(  B & A_1_ & E_1_ 
+                      #   B & A_1_ & A_0_ & E_0_ 
+                      #   B & A_0_ & E_1_ & E_0_ );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+                    A_3_ |  1                    24  | Vcc                     
+                         |                           |
+                    E_3_ |  2                    23  | !acarreo_0_1__n         
+                         |                           |
+                       B |  3                    22  | S_0_                    
+                         |                           |
+                    A_2_ |  4                    21  | S_2_                    
+                         |                           |
+                    A_1_ |  5                    20  | S_3_                    
+                         |                           |
+                    A_0_ |  6                    19  |                         
+                         |                           |
+                    E_2_ |  7                    18  |                         
+                         |                           |
+                    E_1_ |  8                    17  |                         
+                         |                           |
+                    E_0_ |  9                    16  | R                       
+                         |                           |
+                         | 10                    15  | S_1_                    
+                         |                           |
+                         | 11                    14  | acarreo_2__n            
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      9      |    3 ( 25 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      7      |    3 ( 30 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      0      |   10 (100 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 5
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+S_3_                                     |   20     |   3   |  14   |  11
+R                                        |   16     |   3   |  12   |   9
+S_2_                                     |   21     |   6   |  12   |   6
+S_1_                                     |   15     |   6   |  10   |   4
+S_0_                                     |   22     |   7   |  10   |   3
+acarreo_2__n                             |   14     |   3   |   8   |   5
+acarreo_0_1__n                           |   23     |   3   |   8   |   5
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+A_3_                                     |    1     | CLK/IN
+E_3_                                     |    2     | INPUT
+B                                        |    3     | INPUT
+A_2_                                     |    4     | INPUT
+A_1_                                     |    5     | INPUT
+A_0_                                     |    6     | INPUT
+E_2_                                     |    7     | INPUT
+E_1_                                     |    8     | INPUT
+E_0_                                     |    9     | INPUT
+acarreo_2__n                             |   14     | BIDIR
+acarreo_0_1__n                           |   23     | BIDIR
+
+
+                                                                      Page 6
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Apr 19 11:02:53 2017
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   17  |  BIDIR | NORMAL 14   |    D
+   18  |  BIDIR | NORMAL 16   |    D
+   19  |  BIDIR | NORMAL 16   |    D

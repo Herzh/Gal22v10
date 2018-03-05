@@ -1,0 +1,2 @@
+@E: CD830 :"C:\users\aluci\documents\isplever\gal2\multiplicador.vhd":45:7:45:7|Expecting array for indexed/sliced name
+

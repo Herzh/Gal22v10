@@ -1,0 +1,182 @@
+#$ DATE Wed Apr 05 18:40:34 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE luces
+#$ PINS 9 f_7_ clk f_6_ f_5_ f_4_ f_3_ f_2_ f_1_ f_0_
+#$ NODES 60 cnt_tmp_0_ cnt_tmp_1_ cnt_tmp_2_ cnt_tmp_3_ f_1_7_0__n_4_n f_1_7_0__n_7_n f_1_7_0__n_9_n f_1_7_0__n_11_n f_1_7_0__n_12_n f_1_7_0__n_13_n \
+#  f_1_7_0__n_14_n f_1_7__n f_1_7_0__n_10_n f_1_7_0__n_5_n f_1_7_0__n_8_n f_1_7_0__n_2_n cnt_tmp_c2 cnt_tmp_c1 f_1_7_0__n_3_n f_1_7_0__n_4_i_n \
+#  f_1_7_0__n_7_i_n f_1_7_0__n_9_i_n f_1_7_0__n_11_i_n f_1_7_0__n_12_i_n f_1_7_0__n_13_i_n f_1_7_0__n_14_i_n cnt_tmp_i_1__n cnt_tmp_i_2__n cnt_tmp_i_0__n f_1_7_0__n_5_i_n \
+#  f_1_7_0__n_10_i_n f_1_7_0__n_8_i_n f_1_7_0__n_2_i_n cnt_tmp_c2_i cnt_tmp_i_3__n clk_c f_1_7_0__m10_un3_n f_1_7_0__m10_un1_n f_1_7_0__m10_un0_n f_1_7_0__m9_un3_n \
+#  f_1_7_0__m9_un1_n f_1_7_0__m9_un0_n f_1_7_0__m8_un3_n f_1_7_0__m8_un1_n f_1_7_0__m8_un0_n f_1_7_0__m7_un3_n f_1_7_0__m7_un1_n f_1_7_0__m7_un0_n f_1_7_0__m6_un3_n f_1_7_0__m6_un1_n \
+#  f_1_7_0__m6_un0_n f_1_7_0__m13_un3_n f_1_7_0__m13_un1_n f_1_7_0__m13_un0_n f_1_7_0__m12_un3_n f_1_7_0__m12_un1_n f_1_7_0__m12_un0_n f_1_7_0__m11_un3_n f_1_7_0__m11_un1_n f_1_7_0__m11_un0_n \
+#  
+.model luces
+.inputs clk.BLIF cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_1_7_0__n_4_n.BLIF f_1_7_0__n_7_n.BLIF f_1_7_0__n_9_n.BLIF f_1_7_0__n_11_n.BLIF \
+  f_1_7_0__n_12_n.BLIF f_1_7_0__n_13_n.BLIF f_1_7_0__n_14_n.BLIF f_1_7__n.BLIF f_1_7_0__n_10_n.BLIF f_1_7_0__n_5_n.BLIF f_1_7_0__n_8_n.BLIF f_1_7_0__n_2_n.BLIF cnt_tmp_c2.BLIF \
+  cnt_tmp_c1.BLIF f_1_7_0__n_3_n.BLIF f_1_7_0__n_4_i_n.BLIF f_1_7_0__n_7_i_n.BLIF f_1_7_0__n_9_i_n.BLIF f_1_7_0__n_11_i_n.BLIF f_1_7_0__n_12_i_n.BLIF f_1_7_0__n_13_i_n.BLIF f_1_7_0__n_14_i_n.BLIF \
+  cnt_tmp_i_1__n.BLIF cnt_tmp_i_2__n.BLIF cnt_tmp_i_0__n.BLIF f_1_7_0__n_5_i_n.BLIF f_1_7_0__n_10_i_n.BLIF f_1_7_0__n_8_i_n.BLIF f_1_7_0__n_2_i_n.BLIF cnt_tmp_c2_i.BLIF cnt_tmp_i_3__n.BLIF \
+  clk_c.BLIF f_1_7_0__m10_un3_n.BLIF f_1_7_0__m10_un1_n.BLIF f_1_7_0__m10_un0_n.BLIF f_1_7_0__m9_un3_n.BLIF f_1_7_0__m9_un1_n.BLIF f_1_7_0__m9_un0_n.BLIF f_1_7_0__m8_un3_n.BLIF f_1_7_0__m8_un1_n.BLIF \
+  f_1_7_0__m8_un0_n.BLIF f_1_7_0__m7_un3_n.BLIF f_1_7_0__m7_un1_n.BLIF f_1_7_0__m7_un0_n.BLIF f_1_7_0__m6_un3_n.BLIF f_1_7_0__m6_un1_n.BLIF f_1_7_0__m6_un0_n.BLIF f_1_7_0__m13_un3_n.BLIF f_1_7_0__m13_un1_n.BLIF \
+  f_1_7_0__m13_un0_n.BLIF f_1_7_0__m12_un3_n.BLIF f_1_7_0__m12_un1_n.BLIF f_1_7_0__m12_un0_n.BLIF f_1_7_0__m11_un3_n.BLIF f_1_7_0__m11_un1_n.BLIF f_1_7_0__m11_un0_n.BLIF  
+.outputs f_7_ f_6_ f_5_ f_4_ f_3_ f_2_ f_1_ f_0_ cnt_tmp_0_.D cnt_tmp_0_.C cnt_tmp_1_.D \
+  cnt_tmp_1_.C cnt_tmp_2_.D cnt_tmp_2_.C cnt_tmp_3_.D cnt_tmp_3_.C f_1_7_0__n_4_n f_1_7_0__n_7_n f_1_7_0__n_9_n f_1_7_0__n_11_n f_1_7_0__n_12_n f_1_7_0__n_13_n \
+  f_1_7_0__n_14_n f_1_7__n f_1_7_0__n_10_n f_1_7_0__n_5_n f_1_7_0__n_8_n f_1_7_0__n_2_n cnt_tmp_c2 cnt_tmp_c1 f_1_7_0__n_3_n f_1_7_0__n_4_i_n f_1_7_0__n_7_i_n \
+  f_1_7_0__n_9_i_n f_1_7_0__n_11_i_n f_1_7_0__n_12_i_n f_1_7_0__n_13_i_n f_1_7_0__n_14_i_n cnt_tmp_i_1__n cnt_tmp_i_2__n cnt_tmp_i_0__n f_1_7_0__n_5_i_n f_1_7_0__n_10_i_n f_1_7_0__n_8_i_n \
+  f_1_7_0__n_2_i_n cnt_tmp_c2_i cnt_tmp_i_3__n clk_c f_1_7_0__m10_un3_n f_1_7_0__m10_un1_n f_1_7_0__m10_un0_n f_1_7_0__m9_un3_n f_1_7_0__m9_un1_n f_1_7_0__m9_un0_n f_1_7_0__m8_un3_n \
+  f_1_7_0__m8_un1_n f_1_7_0__m8_un0_n f_1_7_0__m7_un3_n f_1_7_0__m7_un1_n f_1_7_0__m7_un0_n f_1_7_0__m6_un3_n f_1_7_0__m6_un1_n f_1_7_0__m6_un0_n f_1_7_0__m13_un3_n f_1_7_0__m13_un1_n f_1_7_0__m13_un0_n \
+  f_1_7_0__m12_un3_n f_1_7_0__m12_un1_n f_1_7_0__m12_un0_n f_1_7_0__m11_un3_n f_1_7_0__m11_un1_n f_1_7_0__m11_un0_n
+.names  clk.BLIF clk_c
+1 1
+.names  f_1_7_0__n_4_i_n.BLIF f_0_
+1 1
+.names  f_1_7_0__n_7_i_n.BLIF f_1_
+1 1
+.names  f_1_7_0__n_9_i_n.BLIF f_2_
+1 1
+.names  f_1_7_0__n_11_i_n.BLIF f_3_
+1 1
+.names  f_1_7_0__n_12_i_n.BLIF f_4_
+1 1
+.names  f_1_7_0__n_13_i_n.BLIF f_5_
+1 1
+.names  f_1_7_0__n_14_i_n.BLIF f_6_
+1 1
+.names  f_1_7__n.BLIF f_7_
+1 1
+.names  cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_c1
+11 1
+.names  f_1_7_0__n_4_n.BLIF f_1_7_0__n_4_i_n
+0 1
+.names  f_1_7_0__n_7_n.BLIF f_1_7_0__n_7_i_n
+0 1
+.names  f_1_7_0__n_9_n.BLIF f_1_7_0__n_9_i_n
+0 1
+.names  f_1_7_0__n_11_n.BLIF f_1_7_0__n_11_i_n
+0 1
+.names  f_1_7_0__n_12_n.BLIF f_1_7_0__n_12_i_n
+0 1
+.names  f_1_7_0__n_13_n.BLIF f_1_7_0__n_13_i_n
+0 1
+.names  f_1_7_0__n_14_n.BLIF f_1_7_0__n_14_i_n
+0 1
+.names  f_1_7_0__n_10_n.BLIF f_1_7_0__n_10_i_n
+0 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m10_un3_n
+0 1
+.names  cnt_tmp_i_2__n.BLIF cnt_tmp_3_.BLIF f_1_7_0__m10_un1_n
+11 1
+.names  f_1_7_0__n_10_i_n.BLIF f_1_7_0__m10_un3_n.BLIF f_1_7_0__m10_un0_n
+11 1
+.names  f_1_7_0__m10_un1_n.BLIF f_1_7_0__m10_un0_n.BLIF f_1_7_0__n_11_n
+1- 1
+-1 1
+.names  f_1_7_0__n_5_n.BLIF f_1_7_0__n_5_i_n
+0 1
+.names  cnt_tmp_0_.BLIF f_1_7_0__m9_un3_n
+0 1
+.names  cnt_tmp_i_2__n.BLIF cnt_tmp_0_.BLIF f_1_7_0__m9_un1_n
+11 1
+.names  f_1_7_0__n_5_i_n.BLIF f_1_7_0__m9_un3_n.BLIF f_1_7_0__m9_un0_n
+11 1
+.names  f_1_7_0__m9_un1_n.BLIF f_1_7_0__m9_un0_n.BLIF f_1_7_0__n_10_n
+1- 1
+-1 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m8_un3_n
+0 1
+.names  f_1_7_0__n_8_n.BLIF cnt_tmp_3_.BLIF f_1_7_0__m8_un1_n
+11 1
+.names  f_1_7_0__n_5_n.BLIF f_1_7_0__m8_un3_n.BLIF f_1_7_0__m8_un0_n
+11 1
+.names  f_1_7_0__m8_un1_n.BLIF f_1_7_0__m8_un0_n.BLIF f_1_7_0__n_9_n
+1- 1
+-1 1
+.names  cnt_tmp_0_.BLIF f_1_7_0__m7_un3_n
+0 1
+.names  f_1_7_0__n_2_n.BLIF cnt_tmp_0_.BLIF f_1_7_0__m7_un1_n
+11 1
+.names  cnt_tmp_i_2__n.BLIF f_1_7_0__m7_un3_n.BLIF f_1_7_0__m7_un0_n
+11 1
+.names  f_1_7_0__m7_un1_n.BLIF f_1_7_0__m7_un0_n.BLIF f_1_7_0__n_8_n
+1- 1
+-1 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m6_un3_n
+0 1
+.names  f_1_7_0__n_2_n.BLIF cnt_tmp_3_.BLIF f_1_7_0__m6_un1_n
+11 1
+.names  cnt_tmp_c2.BLIF f_1_7_0__m6_un3_n.BLIF f_1_7_0__m6_un0_n
+11 1
+.names  f_1_7_0__m6_un1_n.BLIF f_1_7_0__m6_un0_n.BLIF f_1_7_0__n_7_n
+1- 1
+-1 1
+.names  cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF f_1_7_0__n_5_n
+11 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__n_3_n.BLIF f_1_7_0__n_4_n
+11 1
+.names  cnt_tmp_0_.BLIF cnt_tmp_i_0__n
+0 1
+.names  cnt_tmp_i_0__n.BLIF f_1_7_0__n_2_n.BLIF f_1_7_0__n_3_n
+11 1
+.names  cnt_tmp_1_.BLIF cnt_tmp_i_1__n
+0 1
+.names  cnt_tmp_2_.BLIF cnt_tmp_i_2__n
+0 1
+.names  cnt_tmp_i_1__n.BLIF cnt_tmp_i_2__n.BLIF f_1_7_0__n_2_n
+11 1
+.names  cnt_tmp_2_.BLIF cnt_tmp_c1.BLIF cnt_tmp_c2
+11 1
+.names  cnt_tmp_3_.BLIF cnt_tmp_c2.BLIF cnt_tmp_3_.D
+01 1
+10 1
+.names  cnt_tmp_2_.BLIF cnt_tmp_c1.BLIF cnt_tmp_2_.D
+01 1
+10 1
+.names  cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_1_.D
+01 1
+10 1
+.names  cnt_tmp_3_.BLIF cnt_tmp_i_3__n
+0 1
+.names  cnt_tmp_i_3__n.BLIF f_1_7_0__n_3_n.BLIF f_1_7__n
+11 1
+.names  f_1_7_0__n_2_n.BLIF f_1_7_0__n_2_i_n
+0 1
+.names  cnt_tmp_c2.BLIF cnt_tmp_c2_i
+0 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m13_un3_n
+0 1
+.names  cnt_tmp_c2_i.BLIF cnt_tmp_3_.BLIF f_1_7_0__m13_un1_n
+11 1
+.names  f_1_7_0__n_2_i_n.BLIF f_1_7_0__m13_un3_n.BLIF f_1_7_0__m13_un0_n
+11 1
+.names  f_1_7_0__m13_un1_n.BLIF f_1_7_0__m13_un0_n.BLIF f_1_7_0__n_14_n
+1- 1
+-1 1
+.names  f_1_7_0__n_8_n.BLIF f_1_7_0__n_8_i_n
+0 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m12_un3_n
+0 1
+.names  f_1_7_0__n_5_i_n.BLIF cnt_tmp_3_.BLIF f_1_7_0__m12_un1_n
+11 1
+.names  f_1_7_0__n_8_i_n.BLIF f_1_7_0__m12_un3_n.BLIF f_1_7_0__m12_un0_n
+11 1
+.names  f_1_7_0__m12_un1_n.BLIF f_1_7_0__m12_un0_n.BLIF f_1_7_0__n_13_n
+1- 1
+-1 1
+.names  cnt_tmp_3_.BLIF f_1_7_0__m11_un3_n
+0 1
+.names  f_1_7_0__n_10_n.BLIF cnt_tmp_3_.BLIF f_1_7_0__m11_un1_n
+11 1
+.names  cnt_tmp_2_.BLIF f_1_7_0__m11_un3_n.BLIF f_1_7_0__m11_un0_n
+11 1
+.names  f_1_7_0__m11_un1_n.BLIF f_1_7_0__m11_un0_n.BLIF f_1_7_0__n_12_n
+1- 1
+-1 1
+.names  cnt_tmp_i_0__n.BLIF cnt_tmp_0_.D
+1 1
+.names  clk_c.BLIF cnt_tmp_0_.C
+1 1
+.names  clk_c.BLIF cnt_tmp_1_.C
+1 1
+.names  clk_c.BLIF cnt_tmp_2_.C
+1 1
+.names  clk_c.BLIF cnt_tmp_3_.C
+1 1
+.end

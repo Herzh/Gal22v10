@@ -1,0 +1,26 @@
+Note 4042: Unable to assign f_6_, need more pins 
+like pin 23.
+Note 4042: Unable to assign f_7_, need more pins 
+like pin 23.
+Note 4042: Unable to assign f_6_, need more pins 
+like pin 22.
+Note 4042: Unable to assign f_7_, need more pins 
+like pin 22.
+Note 4042: Unable to assign f_6_, need more pins 
+like pin 21.
+Note 4042: Unable to assign f_7_, need more pins 
+like pin 21.
+Note 4042: Unable to assign f_6_, need more pins 
+like pin 20.
+Note 4042: Unable to assign f_7_, need more pins 
+like pin 20.
+Note 4042: Unable to assign f_6_, need more pins 
+like pin 19.
+Note 4042: Unable to assign f_7_, need more pins 
+like pin 19.
+$DEVICE         p22v10g  nofit 
+$PINS   11  cnt_tmp_3_:23   cnt_tmp_2_:14   cnt_tmp_1_:22   cnt_tmp_0_:15   f_0_:21   f_1_:16   f_2_:20   
+f_3_:17   f_4_:19   f_5_:18   clk:1   
+$UNASSIGNED    2  f_6_   f_7_   
+--------------------------------------------------------------
+

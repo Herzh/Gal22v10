@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Compuerta
+DESIGN compuerta Normal
+DEVKIT GAL22V10D-10LP
+ENTRY Pure VHDL
+STIMULUS simy.wdl
+MODULE compuertay.vhd
+MODSTYLE entY Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE entY

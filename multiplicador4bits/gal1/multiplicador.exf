@@ -1,0 +1,124 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      A(3:0)                        A                  3          4            -1
+      Port          2      B(1:0)                        B                  1          2            -1
+      Port          3      R(1:0)                        R                  1          2            -1
+      Port          4      S(3:0)                        S                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      A_3_                        A[3]                       1            0            
+        Port      A_2_                        A[2]                       1            1            
+        Port      A_1_                        A[1]                       1            2            
+        Port      A_0_                        A[0]                       1            3            
+        Port      B_1_                        B[1]                       2            0            
+        Port      B_0_                        B[0]                       2            1            
+        Port      R_1_                        R[1]                       3            0            
+        Port      R_0_                        R[0]                       3            1            
+        Port      S_3_                        S[3]                       4            0            
+        Port      S_2_                        S[2]                       4            1            
+        Port      S_1_                        S[1]                       4            2            
+        Port      S_0_                        S[0]                       4            3            
+End
+Section Cross Reference File
+Design 'multiplicador' created Wed Apr 19 11:07:04 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   A_0_                                      A[0]
+   Inst                   A_1_                                      A[1]
+   Inst                   A_2_                                      A[2]
+   Inst                   A_3_                                      A[3]
+   Inst                   B_0_                                      B[0]
+   Inst                   B_1_                                      B[1]
+   Inst                   R_0_                                      R[0]
+   Inst                   R_1_                                      R[1]
+   Inst                   S_0_                                      S[0]
+   Inst                   S_1_                                      S[1]
+   Inst                   S_2_                                      S[2]
+   Inst                   S_3_                                      S[3]
+   Inst        U0_Acarreo_i_0_                           U0.Acarreo_i[0]
+   Inst              U1_Cout_i                                 U1.Cout_i
+   Inst              U2_Cout_i                                 U2.Cout_i
+   Inst          U2_un2_cout_i                             U2.un2_cout_i
+   Inst              U2_cout_i                                 U2.cout_i
+   Inst            U2_Cout_1_i                               U2.Cout_1_i
+   Inst                 U2_S_1                                    U2.S_1
+   Inst                   U2_S                                      U2.S
+   Inst                 U1_S_1                                    U1.S_1
+   Inst                   U1_S                                      U1.S
+   Inst                U1_cout                                   U1.cout
+   Inst                U1_Cout                                   U1.Cout
+   Inst              U1_cout_i                                 U1.cout_i
+   Inst                   U0_S                                      U0.S
+   Inst                U0_cout                                   U0.cout
+   Inst                   U3_S                                      U3.S
+   Inst              U0_R_1_0_                                 U0.R_1[0]
+   Inst                U0_C_0_                                   U0.C[0]
+   Inst                U0_C_1_                                   U0.C[1]
+   Inst                U0_C_2_                                   U0.C[2]
+   Inst                U0_C_3_                                   U0.C[3]
+   Inst                U0_C_4_                                   U0.C[4]
+   Inst                U0_C_5_                                   U0.C[5]
+   Inst                U0_C_6_                                   U0.C[6]
+   Inst                U2_cout                                   U2.cout
+   Inst            U2_un2_cout                               U2.un2_cout
+   Inst              U2_Cout_1                                 U2.Cout_1
+   Inst                U2_Cout                                   U2.Cout
+   Net                r_1_0__n                                    R_1[0]
+   Net                r_1_1__n                                    R_1[1]
+   Net                s_1_0__n                                    S_1[0]
+   Net                s_1_1__n                                    S_1[1]
+   Net                s_1_2__n                                    S_1[2]
+   Net                s_1_3__n                                    S_1[3]
+   Net            acarreo_0__n                                Acarreo[0]
+   Net                  c_3__n                                      C[3]
+   Net                  c_2__n                                      C[2]
+   Net            acarreo_1__n                                Acarreo[1]
+   Net                  c_5__n                                      C[5]
+   Net                  c_4__n                                      C[4]
+   Net                  c_0__n                                      C[0]
+   Net                  c_1__n                                      C[1]
+   Net            acarreo_2__n                                Acarreo[2]
+   Net                  c_6__n                                      C[6]
+   Net               u2_cout_n                                   U2.cout
+   Net           u2_un2_cout_n                               U2.un2_cout
+   Net               u1_cout_n                                   U1.cout
+   Net                a_c_0__n                                    A_c[0]
+   Net                  a_0__n                                      A[0]
+   Net                a_c_1__n                                    A_c[1]
+   Net                  a_1__n                                      A[1]
+   Net                a_c_2__n                                    A_c[2]
+   Net                  a_2__n                                      A[2]
+   Net                a_c_3__n                                    A_c[3]
+   Net                b_c_0__n                                    B_c[0]
+   Net                  b_0__n                                      B[0]
+   Net                b_c_1__n                                    B_c[1]
+   Net                  r_0__n                                      R[0]
+   Net                  s_0__n                                      S[0]
+   Net                  s_1__n                                      S[1]
+   Net                  s_2__n                                      S[2]
+   Net             u1_cout_i_n                                 U1.cout_i
+   Net          acarreo_i_0__n                              Acarreo_i[0]
+   Net          acarreo_0_1__n                              Acarreo_0[1]
+   Net          acarreo_0_2__n                              Acarreo_0[2]
+   Net         u2_un2_cout_i_n                             U2.un2_cout_i
+   Net             u2_cout_i_n                                 U2.cout_i
+   Net              s_1_i_3__n                                  S_1_i[3]
+   Net              s_1_1_1__n                                  S_1_1[1]
+   Net              s_1_1_0__n                                  S_1_1[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A_3_
+        Input     B_1_
+        Input     A_2_
+        Input     A_1_
+        Input     A_0_
+        Input     B_0_
+        Output     R_1_
+        Output     S_3_
+        Output     R_0_
+        Output     S_2_
+        Output     S_1_
+        Output     S_0_
+End

@@ -1,0 +1,126 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Create Fuse Map
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe "entY.bl0" -red bypin choose -collapse -pterms 8 -family -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file entY.bl0...
+Node A_c has been collapsed.
+Node B_c has been collapsed.
+Node Y_c has been collapsed.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file entY.bl1...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblflink.exe "entY.bl1" -o "compuerta.bl2" -omod entY -family -err automake.err -gui'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Top-level file: 'entY.bl1'
+
+Hierarchical BLIF: 'compuerta.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe compuerta.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file compuerta.bl2...
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file compuerta.bl3...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\idiofft.exe compuerta.bl3 -pla -o compuerta.tt2 -dev p22v10g -define N -err automake.err -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: compuerta.bl3.
+Output file: compuerta.tt2.
+Cross reference file: compuerta.xrf.
+
+Shortening signal names...
+Writing signal name cross reference file compuerta.xrf... 
+
+DIOFFT complete. - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fit.exe compuerta.tt2 -dev p22v10g -str -err automake.err -gui'
+
+FIT  Generic Device Fitter
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: 'compuerta.tt2'
+Device 'p22v10g'
+Design FITS
+Pin-assigned pla: 'compuerta.tt3'
+
+FIT complete.  Time: 1 second.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fuseasm.exe compuerta.tt3 -dev p22v10g -o compuerta.jed -ivec NoInput.tmv -rep compuerta.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'compuerta.tt3'
+Device: 'P22V10G'
+Building model...
+Choosing best polarities...
+Mapping equations...
+.
+2 of 132 terms used; 0 vectors loaded
+Programmer load file: 'compuerta.jed'
+Generating report...
+Report file: 'compuerta.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj compuerta -if compuerta.jed -j2s -log compuerta.svl -gui'
+
+Need not generate svf file according to the constraints, exit
+Done: completed successfully.

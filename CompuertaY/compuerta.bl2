@@ -1,0 +1,13 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Apr 05 18:02:45 2017
+#$ MODULE entY
+#$ PINS 3 A B Y
+
+.model enty
+.inputs A.BLIF B.BLIF
+.outputs Y
+.names A.BLIF B.BLIF Y
+11 1
+0- 0
+-0 0
+.end

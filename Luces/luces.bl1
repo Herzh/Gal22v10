@@ -1,0 +1,104 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Apr 05 18:40:34 2017
+#$ MODULE luces
+#$ PINS 9 f_7_ clk f_6_ f_5_ f_4_ f_3_ f_2_ f_1_ f_0_
+#$ NODES 4 cnt_tmp_0_ cnt_tmp_1_ cnt_tmp_2_ cnt_tmp_3_
+
+.model luces
+.inputs clk.BLIF cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF
+.outputs f_7_ f_6_ f_5_ f_4_ f_3_ f_2_ f_1_ f_0_ cnt_tmp_0_.D cnt_tmp_0_.C \
+cnt_tmp_1_.D cnt_tmp_1_.C cnt_tmp_2_.D cnt_tmp_2_.C cnt_tmp_3_.D cnt_tmp_3_.C
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_1_.D
+10 1
+01 1
+00 0
+11 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_2_.D
+110 1
+-01 1
+0-1 1
+111 0
+-00 0
+0-0 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF \
+cnt_tmp_3_.D
+1110 1
+--01 1
+-0-1 1
+0--1 1
+1111 0
+--00 0
+-0-0 0
+0--0 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_7_
+0000 1
+--1- 0
+-1-- 0
+1--- 0
+---1 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_6_
+1111 1
+-000 1
+0--1 0
+--10 0
+-0-1 0
+-10- 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_5_
+-000 1
+-111 1
+0-00 1
+110- 0
+-0-1 0
+--10 0
+--01 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_4_
+--00 1
+-111 1
+1-11 1
+00-1 0
+--10 0
+--01 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_3_
+00-0 1
+--00 1
+--11 1
+-110 0
+1-10 0
+--01 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_2_
+110- 1
+-0-0 1
+--00 1
+--11 1
+-110 0
+-001 0
+0-01 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_1_
+01-- 1
+-0-0 1
+--11 1
+-10- 1
+1110 0
+-001 0
+.names cnt_tmp_0_.BLIF cnt_tmp_1_.BLIF cnt_tmp_2_.BLIF cnt_tmp_3_.BLIF f_0_
+--1- 1
+-1-- 1
+1--- 1
+---0 1
+0001 0
+.names cnt_tmp_0_.BLIF cnt_tmp_0_.D
+0 1
+1 0
+.names clk.BLIF cnt_tmp_0_.C
+1 1
+0 0
+.names clk.BLIF cnt_tmp_1_.C
+1 1
+0 0
+.names clk.BLIF cnt_tmp_2_.C
+1 1
+0 0
+.names clk.BLIF cnt_tmp_3_.C
+1 1
+0 0
+.end

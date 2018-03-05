@@ -1,0 +1,17 @@
+#$ DATE Wed Apr 05 18:02:45 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE enty
+#$ PINS 3 A B Y
+#$ NODES 3 A_c B_c Y_c 
+.model enty
+.inputs A.BLIF B.BLIF A_c.BLIF B_c.BLIF Y_c.BLIF  
+.outputs Y A_c B_c Y_c
+.names  A.BLIF A_c
+1 1
+.names  B.BLIF B_c
+1 1
+.names  Y_c.BLIF Y
+1 1
+.names  A_c.BLIF B_c.BLIF Y_c
+11 1
+.end

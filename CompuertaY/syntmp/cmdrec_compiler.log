@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\users\aluci\documents\isplever\synwork\entY_comp.srs  -top  entY  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  C:\users\aluci\documents\isplever\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\users\aluci\documents\isplever\compuertay.vhd -loga  C:\users\aluci\documents\isplever\entY.srr 
+rc:0 success:1
+C:\users\aluci\documents\isplever\synwork\entY_comp.srs|o|1491433357|1369
+C:\users\aluci\documents\isplever\compuertay.vhd|i|1491432892|288
+C:\users\aluci\documents\isplever\entY.srr|o|1491433357|1308
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401252698|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401252904|5533184
